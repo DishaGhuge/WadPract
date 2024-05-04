@@ -1,0 +1,12 @@
+h1{
+    background-color: brown;
+    margin:20px;
+}
+.help{
+    background-color:orange;
+    background-image:url("Help.jpg");
+    background-size: cover;
+}
+.help a{
+    text-decoration: none;
+}

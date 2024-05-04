@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Form"</title>
+</head>
+<body>
+   
+    <h1>Student Information Form</h1>
+    <form>
+    <table border="4">
+        <tr>
+            <td><label>Name:</label></td>
+            <td><input type="text" placeholder="Enter your name"></td>
+        </tr>
+        <tr>
+            <td><label>College Name:</label></td>
+            <td><input type="text" placeholder="Enter your college name"></td>
+        </tr>
+        <tr>
+            <td><lable>Mobile Number:</lable></td>
+            <td><input type="tel" name="mobile number" minlength="10" maxlength="10" pattern="[789]{}" placeholder="Enter your mobile number"></td>
+        </tr>
+    <!-- <input type="password" placeholder="Enter your mobile number"> -->
+        <tr>
+            <td> <label>Email:</label></td>
+            <td><input type="email" name="email" pattern="[a-zA-z0-9.-%=-]+@[a-zA-z0-9.-]+\.[a-zA-Z]{2,}$" required placeholder="Enter your mail"></td>
+        </tr>
+        <tr>
+            <td><label>Address:</label></td>
+            <td><textarea placeholder="Enter your address"></textarea></td>
+        </tr>
+        <tr>
+            <td><label>Gender:</label></td>
+            <td><input type="radio" name="Gender" value="Male">Male </td>
+            <td><input type="radio" name="Gender" value="Female">Female</td>
+        </tr>
+        <tr>
+            <td><p>Select your City</p>
+                <select>
+                    <option value="City">City</option>
+                    <option value="Nashik">Nashik</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Banglore">Banglore</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td><label>Technologies you know:</label></td>
+            <td><input type="checkbox" value="C">C
+            <input type="checkbox" value="C++">C++
+            <input type="checkbox" value="Java">Java
+            <input type="checkbox" value="Python">Python</td>
+        </tr>
+        <tr>
+            <td><lable>Date of Birth</lable></td>
+            <td><input type="date" name="Date of birth"><td>
+        </tr>
+        <tr>
+            <td><lable>Upload Photo:</lable></td>
+            <td><input type="file" id="myFiles" name="myphotos"></td>
+        </tr>
+        <tr>
+            <td><button>Reset</button></td>
+            <td><input type="submit" value="Submit"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
